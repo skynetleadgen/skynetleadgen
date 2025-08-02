@@ -1,0 +1,4 @@
+[submodule "skynetleadgen/skynetleadgen"]
+	path = skynetleadgen/skynetleadgen
+	url = git@github.com:skynetleadgen/skynetleadgen.git
+	branch = Custom
