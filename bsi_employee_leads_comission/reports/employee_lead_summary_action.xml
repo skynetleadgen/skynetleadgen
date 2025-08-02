@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="action_report_lead_summary" model="ir.actions.report">
+            <field name="name">Lead Summary</field>
+            <field name="model">lead.summary.wizard</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">bsi_employee_leads_comission.lead_summary</field>
+            <field name="report_file">bsi_employee_leads_comission.lead_summary</field>
+            <field name="binding_model_id"
+                ref="bsi_employee_leads_comission.model_lead_summary_wizard" />
+            <field name="binding_type">report</field>
+        </record>
+    </data>
+</odoo>

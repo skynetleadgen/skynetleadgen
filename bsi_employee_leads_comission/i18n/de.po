@@ -1,0 +1,231 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* bsi_employee_leads_comission
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-20 07:02+0000\n"
+"PO-Revision-Date: 2023-01-20 07:02+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bsi_employee_leads_comission
+#: model_terms:ir.ui.view,arch_db:bsi_employee_leads_comission.lead_summary
+msgid "<span> Lead Summary</span>"
+msgstr "<span> Lead-Zusammenfassung</span>"
+
+#. module: bsi_employee_leads_comission
+#: model_terms:ir.ui.view,arch_db:bsi_employee_leads_comission.lead_summary
+msgid "<strong>Commission Rule</strong>"
+msgstr "<strong>Kommissionsregel</strong>"
+
+#. module: bsi_employee_leads_comission
+#: model_terms:ir.ui.view,arch_db:bsi_employee_leads_comission.lead_summary
+msgid "<strong>End Date:</strong>"
+msgstr "<strong>Enddatum:</strong>"
+
+#. module: bsi_employee_leads_comission
+#: model_terms:ir.ui.view,arch_db:bsi_employee_leads_comission.lead_summary
+msgid "<strong>Start Date:</strong>"
+msgstr "<strong>Startdatum:</strong>"
+
+#. module: bsi_employee_leads_comission
+#: model_terms:ir.ui.view,arch_db:bsi_employee_leads_comission.lead_summary
+msgid "<strong>Total Commission</strong>"
+msgstr "<strong>Gesamtprovision</strong>"
+
+#. module: bsi_employee_leads_comission
+#: model_terms:ir.ui.view,arch_db:bsi_employee_leads_comission.lead_summary
+msgid "<strong>Total Revenue</strong>"
+msgstr "<strong>Gesamtumsatz</strong>"
+
+#. module: bsi_employee_leads_comission
+#: model:ir.model.fields.selection,name:bsi_employee_leads_comission.selection__crm_commission_rule__commission_type__amount
+msgid "Amount"
+msgstr "Höhe"
+
+#. module: bsi_employee_leads_comission
+#: model_terms:ir.ui.view,arch_db:bsi_employee_leads_comission.lead_summary_form
+msgid "Cancel"
+msgstr "Absagen"
+
+#. module: bsi_employee_leads_comission
+#: model:ir.model.fields,field_description:bsi_employee_leads_comission.field_crm_commission_rule__commission
+msgid "Commission"
+msgstr "Kommission"
+
+#. module: bsi_employee_leads_comission
+#: model:ir.model.fields,field_description:bsi_employee_leads_comission.field_crm_commission_rule__name
+#: model:ir.model.fields,field_description:bsi_employee_leads_comission.field_hr_employee__commission_rule_id
+msgid "Commission Rule"
+msgstr "Provisionsregel"
+
+#. module: bsi_employee_leads_comission
+#: model:ir.model.fields,field_description:bsi_employee_leads_comission.field_crm_commission_rule__commission_type
+msgid "Commission Type"
+msgstr "Provisionstyp"
+
+#. module: bsi_employee_leads_comission
+#: model_terms:ir.ui.view,arch_db:bsi_employee_leads_comission.lead_summary
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: bsi_employee_leads_comission
+#: model:ir.model.fields,field_description:bsi_employee_leads_comission.field_crm_commission_rule__create_uid
+#: model:ir.model.fields,field_description:bsi_employee_leads_comission.field_lead_summary_wizard__create_uid
+msgid "Created by"
+msgstr "Erstellt von"
+
+#. module: bsi_employee_leads_comission
+#: model:ir.model.fields,field_description:bsi_employee_leads_comission.field_crm_commission_rule__create_date
+#: model:ir.model.fields,field_description:bsi_employee_leads_comission.field_lead_summary_wizard__create_date
+msgid "Created on"
+msgstr "Erstellt am"
+
+#. module: bsi_employee_leads_comission
+#: model:ir.model,name:bsi_employee_leads_comission.model_crm_commission_rule
+msgid "Crm Commission Rule"
+msgstr "CRM-Kommissionsregel"
+
+#. module: bsi_employee_leads_comission
+#: model_terms:ir.ui.view,arch_db:bsi_employee_leads_comission.lead_summary
+msgid "Date Assign"
+msgstr "Datum zuordnen"
+
+#. module: bsi_employee_leads_comission
+#: model:ir.model.fields,field_description:bsi_employee_leads_comission.field_crm_commission_rule__display_name
+#: model:ir.model.fields,field_description:bsi_employee_leads_comission.field_lead_summary_wizard__display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: bsi_employee_leads_comission
+#: model:ir.model,name:bsi_employee_leads_comission.model_hr_employee
+msgid "Employee"
+msgstr "Mitarbeiter"
+
+#. module: bsi_employee_leads_comission
+#: model:ir.model.fields,field_description:bsi_employee_leads_comission.field_lead_summary_wizard__end_date
+msgid "End date"
+msgstr "Endtermin"
+
+#. module: bsi_employee_leads_comission
+#: model_terms:ir.ui.view,arch_db:bsi_employee_leads_comission.lead_summary
+msgid "Expected Revenue"
+msgstr "Erwartete Einnahmen"
+
+#. module: bsi_employee_leads_comission
+#: model:ir.model.fields,field_description:bsi_employee_leads_comission.field_crm_commission_rule__id
+#: model:ir.model.fields,field_description:bsi_employee_leads_comission.field_lead_summary_wizard__id
+msgid "ID"
+msgstr "ICH WÜRDE"
+
+#. module: bsi_employee_leads_comission
+#: model:ir.model.fields,field_description:bsi_employee_leads_comission.field_crm_commission_rule____last_update
+#: model:ir.model.fields,field_description:bsi_employee_leads_comission.field_lead_summary_wizard____last_update
+msgid "Last Modified on"
+msgstr "Zuletzt geändert am"
+
+#. module: bsi_employee_leads_comission
+#: model:ir.model.fields,field_description:bsi_employee_leads_comission.field_crm_commission_rule__write_uid
+#: model:ir.model.fields,field_description:bsi_employee_leads_comission.field_lead_summary_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Zuletzt aktualisiert von"
+
+#. module: bsi_employee_leads_comission
+#: model:ir.model.fields,field_description:bsi_employee_leads_comission.field_crm_commission_rule__write_date
+#: model:ir.model.fields,field_description:bsi_employee_leads_comission.field_lead_summary_wizard__write_date
+msgid "Last Updated on"
+msgstr "Zuletzt aktualisiert am"
+
+#. module: bsi_employee_leads_comission
+#: model:ir.actions.act_window,name:bsi_employee_leads_comission.action_lead_summary_wizard
+#: model:ir.actions.report,name:bsi_employee_leads_comission.action_report_lead_summary
+#: model:ir.ui.menu,name:bsi_employee_leads_comission.crm_menu_report_commission
+#: model_terms:ir.ui.view,arch_db:bsi_employee_leads_comission.lead_summary_form
+msgid "Lead Summary"
+msgstr "Lead-Zusammenfassung"
+
+#. module: bsi_employee_leads_comission
+#: model:ir.model,name:bsi_employee_leads_comission.model_report_bsi_employee_leads_comission_lead_summary
+msgid "Lead Summary Report"
+msgstr "Lead-Zusammenfassungsbericht"
+
+#. module: bsi_employee_leads_comission
+#: model:ir.model,name:bsi_employee_leads_comission.model_lead_summary_wizard
+msgid "Lead Summary Wizard"
+msgstr "Lead-Zusammenfassungs-Assistent"
+
+#. module: bsi_employee_leads_comission
+#: model_terms:ir.ui.view,arch_db:bsi_employee_leads_comission.lead_summary
+msgid "Leads"
+msgstr "Führt"
+
+#. module: bsi_employee_leads_comission
+#: model:ir.model.fields,field_description:bsi_employee_leads_comission.field_hr_employee__opportunity_count
+#: model_terms:ir.ui.view,arch_db:bsi_employee_leads_comission.view_employee_form
+msgid "Opportunities"
+msgstr "Gelegenheiten"
+
+#. module: bsi_employee_leads_comission
+#: model:ir.model.fields.selection,name:bsi_employee_leads_comission.selection__crm_commission_rule__commission_type__percentage
+msgid "Percentage"
+msgstr "Prozentsatz"
+
+#. module: bsi_employee_leads_comission
+#: model_terms:ir.ui.view,arch_db:bsi_employee_leads_comission.lead_summary_form
+msgid "Print"
+msgstr "Drucken"
+
+#. module: bsi_employee_leads_comission
+#: model:ir.ui.menu,name:bsi_employee_leads_comission.crm_menu_report
+msgid "Reporting"
+msgstr "Berichterstattung"
+
+#. module: bsi_employee_leads_comission
+#: model_terms:ir.ui.view,arch_db:bsi_employee_leads_comission.view_employee_form
+msgid "Sales Commission"
+msgstr "Verkaufsprovision"
+
+#. module: bsi_employee_leads_comission
+#: model:ir.actions.act_window,name:bsi_employee_leads_comission.action_crm_commission_rule_view
+#: model:ir.ui.menu,name:bsi_employee_leads_comission.crm_menu_config_sale_commission
+msgid "Sales Commission Rule"
+msgstr "Verkaufsprovisionsregel"
+
+#. module: bsi_employee_leads_comission
+#: model_terms:ir.ui.view,arch_db:bsi_employee_leads_comission.view_crm_commission_rule_form
+#: model_terms:ir.ui.view,arch_db:bsi_employee_leads_comission.view_crm_commission_rule_tree
+msgid "Sales commission Rule"
+msgstr "Verkaufsprovisionsregel"
+
+#. module: bsi_employee_leads_comission
+#: model:ir.model.fields,field_description:bsi_employee_leads_comission.field_lead_summary_wizard__user_id
+msgid "Salesperson"
+msgstr "Verkäuferin"
+
+#. module: bsi_employee_leads_comission
+#: model:ir.model.fields,field_description:bsi_employee_leads_comission.field_lead_summary_wizard__start_date
+msgid "Start date"
+msgstr "Anfangsdatum"
+
+#. module: bsi_employee_leads_comission
+#: model:ir.model.fields,field_description:bsi_employee_leads_comission.field_hr_employee__total_commission
+msgid "Total Commission"
+msgstr "Gesamtprovision"
+
+#. module: bsi_employee_leads_comission
+#: model:ir.model.fields,field_description:bsi_employee_leads_comission.field_hr_employee__total_sales_by_employee
+msgid "Total sales by employee"
+msgstr "Gesamtumsatz nach Mitarbeiter"
+
+#. module: bsi_employee_leads_comission
+#: code:addons/bsi_employee_leads_comission/reports/employee_lead_summary_report.py:0
+#, python-format
+msgid "in this time frame no leads available for this sales person"
+msgstr "In diesem Zeitraum sind für diesen Verkäufer keine Leads verfügbar"
