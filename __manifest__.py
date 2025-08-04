@@ -8,6 +8,10 @@
     "data": [
         "views/sale_commission_view.xml"
     ],
+    'data': [
+    'security/ir.model.access.csv',
+],
     "installable": True,
     "application": True,
 }
+
