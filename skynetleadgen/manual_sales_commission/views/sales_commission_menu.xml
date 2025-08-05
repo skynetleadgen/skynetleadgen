@@ -1,28 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <!-- App Category -->
-    <record id="manual_sales_commission_category" model="ir.module.category">
-        <field name="name">Manual Sales Commission</field>
-    </record>
-
-    <!-- Window Action -->
     <record id="action_manual_sales_commission" model="ir.actions.act_window">
         <field name="name">Manual Sales Commission</field>
         <field name="res_model">manual.sales.commission</field>
         <field name="view_mode">tree,form</field>
-        <field name="help" type="html">
-            <p class="oe_view_nocontent_create">
-                Click to create a new Manual Sales Commission record.
-            </p>
-        </field>
     </record>
 
-    <!-- Top-level App Menu -->
     <menuitem id="menu_manual_sales_commission_root"
               name="Manual Sales Commission"
               sequence="10"
               action="action_manual_sales_commission"
-              app="True"
-              module_category_id="manual_sales_commission_category"
-              groups="base.group_user" />
+              groups="base.group_user"
+              />
 </odoo>
