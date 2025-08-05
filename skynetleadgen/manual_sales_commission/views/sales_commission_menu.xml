@@ -1,31 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <data noupdate="0">
-        <record id="action_sales_commission" model="ir.actions.act_window">
-    <field name="name">Sales Commission</field>
-    <field name="res_model">manual.sales.commission</field>
-    <field name="view_mode">tree,form</field>
-</record>
+    <!-- Action -->
+    <record id="action_manual_sales_commission" model="ir.actions.act_window">
+        <field name="name">Manual Sales Commission</field>
+        <field name="res_model">manual.sales.commission</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first Manual Sales Commission record
+            </p>
+        </field>
+    </record>
 
-<menuitem id="menu_manual_sales_commission_root"
-          name="Sales Commission"
-          sequence="10"
-          action="action_sales_commission"/>
+    <!-- Menu -->
+    <menuitem id="menu_manual_sales_commission_root"
+              name="Manual Sales Commission"
+              sequence="10"/>
 
-
-        <!-- Main app menu -->
-        <menuitem id="menu_manual_sales_commission_root"
-                  name="Sales Commission"
-                  sequence="10"
-                  action="action_sales_commission"
-                  />
-
-        <!-- Action to open tree view -->
-        <record id="action_sales_commission" model="ir.actions.act_window">
-            <field name="name">Sales Commission</field>
-            <field name="res_model">sales.commission</field>
-            <field name="view_mode">tree,form</field>
-        </record>
-
-    </data>
+    <menuitem id="menu_manual_sales_commission"
+              name="Manual Sales Commission"
+              parent="menu_manual_sales_commission_root"
+              action="action_manual_sales_commission"
+              sequence="10"/>
 </odoo>
