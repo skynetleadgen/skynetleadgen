@@ -11,6 +11,6 @@
         # Add other view files here
     ],
     'installable': True,
-    'application': True,   # 👈 This is CRUCIAL
+    'application': True,  
     'auto_install': False,
 }
