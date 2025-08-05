@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <!-- App Category -->
-    <record id="module_category_manual_sales_commission" model="ir.module.category">
+    <record id="manual_sales_commission_category" model="ir.module.category">
         <field name="name">Manual Sales Commission</field>
-        <field name="sequence">10</field>
     </record>
 
-    <!-- Action -->
+    <!-- Window Action -->
     <record id="action_manual_sales_commission" model="ir.actions.act_window">
         <field name="name">Manual Sales Commission</field>
         <field name="res_model">manual.sales.commission</field>
@@ -18,12 +17,12 @@
         </field>
     </record>
 
-    <!-- Root Menu (Top-level menu for the app) -->
+    <!-- Top-level App Menu -->
     <menuitem id="menu_manual_sales_commission_root"
               name="Manual Sales Commission"
               sequence="10"
               action="action_manual_sales_commission"
-              web_icon="manual_sales_commission,static/description/icon.png"
-              />
-
+              app="True"
+              module_category_id="manual_sales_commission_category"
+              groups="base.group_user" />
 </odoo>
