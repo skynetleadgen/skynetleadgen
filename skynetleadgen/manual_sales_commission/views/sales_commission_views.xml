@@ -4,8 +4,8 @@
         
         <!-- Tree view for Sales Commission -->
         <record id="view_sales_commission_tree" model="ir.ui.view">
-            <field name="name">sales_commission.tree</field>
-            <field name="model">sales_commission</field>
+            <field name="name">sales.commission.tree</field>
+            <field name="model">sales.commission</field>
             <field name="type">tree</field>
             <field name="arch" type="xml">
                 <tree>
