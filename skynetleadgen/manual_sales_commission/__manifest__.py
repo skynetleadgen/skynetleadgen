@@ -1,14 +1,16 @@
 {
-    "name": "Manual Sales Commission Calculator",
-    "version": "1.0",
-    "category": "Sales",
-    "summary": "Calculates commission as (no_of_leads * 500) with manual entry",
-    "description": "Custom module to manage salesperson commissions with manual data entry.",
-    "author": "Your Name",
-    "depends": ["base"],
-    "data": [
-        "views/sales_commission_views.xml"
+    'name': 'Manual Sales Commission',
+    'version': '1.0',
+    'summary': 'Manage sales commissions manually',
+    'category': 'Sales',
+    'sequence': 10,
+    'author': 'Your Name',
+    'depends': ['base'],
+    'data': [
+        'views/sales_commission_menu.xml',
+        # Add other view files here
     ],
-    "installable": True,
-    "application": True
+    'installable': True,
+    'application': True,   # 👈 This is CRUCIAL
+    'auto_install': False,
 }
