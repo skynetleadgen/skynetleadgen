@@ -1,16 +1,15 @@
 {
     'name': 'Manual Sales Commission',
     'version': '1.0',
-    'summary': 'Manage sales commissions manually',
-    'category': 'Sales',
-    'sequence': 10,
+    'summary': 'Module to manage manual sales commissions',
+    'description': 'Manage manual sales commissions via a dedicated app menu.',
     'author': 'Your Name',
+    'category': 'Sales',
     'depends': ['base'],
     'data': [
-        'views/sales_commission_menu.xml',
-        # Add other view files here
+        'views/manual_sales_commission_menu.xml',
     ],
     'installable': True,
-    'application': True,  
+    'application': True,
     'auto_install': False,
 }
