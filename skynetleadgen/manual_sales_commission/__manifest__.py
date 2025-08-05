@@ -1,8 +1,8 @@
 {
     'name': 'Manual Sales Commission',
     'version': '1.0',
-    'summary': 'Module to manage manual sales commissions',
-    'description': 'Manage manual sales commissions via a dedicated app menu.',
+    'summary': 'Manage manual sales commissions',
+    'description': 'Module to handle manual sales commissions',
     'author': 'Your Name',
     'category': 'Sales',
     'depends': ['base'],
