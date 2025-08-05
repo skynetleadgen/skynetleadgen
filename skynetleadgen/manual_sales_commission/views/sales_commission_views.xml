@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_sales_commission_tree" model="ir.ui.view">
+        <field name="name">sales.commission.tree</field>
+        <field name="model">sales.commission</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="no_of_leads"/>
+                <field name="commission_amount"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_sales_commission_form" model="ir.ui.view">
+        <field name="name">sales.commission.form</field>
+        <field name="model">sales.commission</field>
+        <field name="arch" type="xml">
+            <form string="Sales Commission">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="no_of_leads"/>
+                        <field name="commission_amount" readonly="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_sales_commission" model="ir.actions.act_window">
+        <field name="name">Sales Commissions</field>
+        <field name="res_model">sales.commission</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_sales_commission_root" name="Sales Commissions"/>
+    <menuitem id="menu_sales_commission" name="Commissions" parent="menu_sales_commission_root" action="action_sales_commission"/>
+</odoo>
