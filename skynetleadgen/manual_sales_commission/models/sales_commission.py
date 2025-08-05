@@ -1,8 +1,8 @@
 from odoo import models, fields
 
-class SalesCommission(models.Model):
-    _name = "sales.commission"
-    _description = "Sales Commission"
+class ManualSalesCommission(models.Model):
+    _name = "manual.sales.commission"
+    _description = "Manual Sales Commission"
 
     name = fields.Char(string="Salesperson Name", required=True)
     no_of_leads = fields.Integer(string="Number of Leads", required=True)
