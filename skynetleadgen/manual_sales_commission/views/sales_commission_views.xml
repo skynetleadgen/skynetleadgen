@@ -3,18 +3,16 @@
     <data noupdate="0">
         
         <!-- Tree view for Sales Commission -->
-        <record id="view_sales_commission_tree" model="ir.ui.view">
+    <record id="view_sales_commission_tree" model="ir.ui.view">
     <field name="name">sales.commission.tree</field>
     <field name="model">sales.commission</field>
-    <field name="type">list</field>
     <field name="arch" type="xml">
-        <tree>
+        <list>
             <field name="name"/>
             <field name="no_of_leads"/>
             <field name="commission_amount"/>
-        </tree>
+        </list>
     </field>
 </record>
-
     </data>
 </odoo>
