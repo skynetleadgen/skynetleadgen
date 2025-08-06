@@ -2,25 +2,26 @@
 <odoo>
   <data>
 
-    <!-- Action -->
+    <!-- Window Action -->
     <record id="action_manual_sales_commission" model="ir.actions.act_window">
       <field name="name">Manual Sales Commission</field>
       <field name="res_model">manual.sales.commission</field>
       <field name="view_mode">tree,form</field>
     </record>
 
-    <!-- Menus -->
+    <!-- Top-level Menu -->
     <menuitem id="menu_manual_sales_commission_root"
               name="Manual Sales Commission"
               sequence="10"
-              groups="base.group_user"/>
+              groups="base.group_user" />
 
+    <!-- Sub Menu linking to action -->
     <menuitem id="menu_manual_sales_commission_records"
               name="Commission Records"
               parent="menu_manual_sales_commission_root"
               action="action_manual_sales_commission"
               sequence="20"
-              groups="base.group_user"/>
+              groups="base.group_user" />
 
     <!-- Tree View -->
     <record id="view_manual_sales_commission_tree" model="ir.ui.view">
@@ -30,4 +31,29 @@
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
-          <field name="no_of_leads"
+          <field name="no_of_leads"/>
+          <field name="commission_amount"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_manual_sales_commission_form" model="ir.ui.view">
+      <field name="name">manual.sales.commission.form</field>
+      <field name="model">manual.sales.commission</field>
+      <field name="type">form</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+              <field name="name"/>
+              <field name="no_of_leads"/>
+              <field name="commission_amount" readonly="1"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+  </data>
+</odoo>
