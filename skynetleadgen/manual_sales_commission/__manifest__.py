@@ -7,7 +7,7 @@
     'category': 'Sales',
     'depends': ['base'],
     'data': [
-        'views/manual_sales_commission_menu.xml',
+        'views/sales_commission_menu.xml',
     ],
     'installable': True,
     'application': True,
