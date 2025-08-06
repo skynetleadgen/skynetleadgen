@@ -44,12 +44,4 @@
                         <group>
                             <field name="name"/>
                             <field name="no_of_leads"/>
-                            <field name="commission_amount" readonly="1"/>
-                        </group>
-                    </sheet>
-                </form>
-            </field>
-        </record>
-
-    </data>
-</odoo>
+                            <field name="commissio
