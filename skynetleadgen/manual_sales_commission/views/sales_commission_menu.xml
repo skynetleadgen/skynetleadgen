@@ -22,7 +22,7 @@
               sequence="20"
               groups="base.group_user"/>
 
-    <!-- Tree view -->
+    <!-- Tree view (fixed: removed type="tree") -->
     <record id="view_manual_sales_commission_tree" model="ir.ui.view">
       <field name="name">manual.sales.commission.tree</field>
       <field name="model">manual.sales.commission</field>
@@ -35,7 +35,7 @@
       </field>
     </record>
 
-    <!-- Form view -->
+    <!-- Form view (also no need for type="form") -->
     <record id="view_manual_sales_commission_form" model="ir.ui.view">
       <field name="name">manual.sales.commission.form</field>
       <field name="model">manual.sales.commission</field>
