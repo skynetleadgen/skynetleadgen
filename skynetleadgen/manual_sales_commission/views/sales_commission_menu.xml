@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
+    <!-- Window Action -->
     <record id="action_manual_sales_commission" model="ir.actions.act_window">
         <field name="name">Manual Sales Commission</field>
         <field name="res_model">manual.sales.commission</field>
         <field name="view_mode">tree,form</field>
     </record>
 
+    <!-- Root Menu (No action!) -->
     <menuitem id="menu_manual_sales_commission_root"
               name="Manual Sales Commission"
               sequence="10"
+              groups="base.group_user"/>
+
+    <!-- Submenu with action -->
+    <menuitem id="menu_manual_sales_commission_records"
+              name="Commission Records"
+              parent="menu_manual_sales_commission_root"
               action="action_manual_sales_commission"
-              groups="base.group_user"
-              />
+              sequence="20"
+              groups="base.group_user"/>
 </odoo>
+
