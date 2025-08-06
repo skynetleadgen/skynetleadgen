@@ -8,7 +8,7 @@
       <field name="view_mode">tree,form</field>
     </record>
 
-    <!-- Root menu item (top-level menu) -->
+    <!-- Root menu item -->
     <menuitem id="menu_manual_sales_commission_root"
               name="Manual Sales Commission"
               sequence="10"
@@ -22,11 +22,10 @@
               sequence="20"
               groups="base.group_user"/>
 
-    <!-- Tree view for manual.sales.commission -->
+    <!-- Tree view -->
     <record id="view_manual_sales_commission_tree" model="ir.ui.view">
       <field name="name">manual.sales.commission.tree</field>
       <field name="model">manual.sales.commission</field>
-      <field name="type">tree</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
@@ -36,11 +35,10 @@
       </field>
     </record>
 
-    <!-- Form view for manual.sales.commission -->
+    <!-- Form view -->
     <record id="view_manual_sales_commission_form" model="ir.ui.view">
       <field name="name">manual.sales.commission.form</field>
       <field name="model">manual.sales.commission</field>
-      <field name="type">form</field>
       <field name="arch" type="xml">
         <form>
           <sheet>
