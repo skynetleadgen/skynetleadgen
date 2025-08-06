@@ -7,6 +7,7 @@
     'category': 'Sales',
     'depends': ['base'],
     'data': [
+        'security/ir.model.access.csv',
         'views/sales_commission_menu.xml',
     ],
     'installable': True,
