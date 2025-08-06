@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_manual_sales_commission_user,access.manual.sales.commission.user,model_manual_sales_commission,base.group_user,1,1,1,1
+access_manual_sales_commission_user,access_manual_sales_commission_user,model_manual_sales_commission,base.group_user,1,1,1,1
