@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <!-- Menu Items -->
+    <!-- Action that opens tree and form views -->
+    <record id="action_manual_sales_commission" model="ir.actions.act_window">
+        <field name="name">Manual Sales Commission</field>
+        <field name="res_model">manual.sales.commission</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Top-level menu -->
     <menuitem id="menu_sales_commission_root"
               name="Sales Commission"
               sequence="10"/>
 
+    <!-- Sub-menu item with action -->
     <menuitem id="menu_sales_commission_sub"
               name="Manual Commission"
               parent="menu_sales_commission_root"
@@ -39,12 +47,5 @@
                 </sheet>
             </form>
         </field>
-    </record>
-
-    <!-- Action -->
-    <record id="action_manual_sales_commission" model="ir.actions.act_window">
-        <field name="name">Manual Sales Commission</field>
-        <field name="res_model">manual.sales.commission</field>
-        <field name="view_mode">tree,form</field>
     </record>
 </odoo>
