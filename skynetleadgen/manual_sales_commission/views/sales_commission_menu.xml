@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <!-- Action that opens tree and form views -->
+    <!-- Action for opening the tree and form view -->
     <record id="action_manual_sales_commission" model="ir.actions.act_window">
         <field name="name">Manual Sales Commission</field>
         <field name="res_model">manual.sales.commission</field>
@@ -12,17 +12,18 @@
               name="Sales Commission"
               sequence="10"/>
 
-    <!-- Sub-menu item with action -->
+    <!-- Sub-menu that opens the action -->
     <menuitem id="menu_sales_commission_sub"
               name="Manual Commission"
               parent="menu_sales_commission_root"
               sequence="10"
-              action="action_manual_sales_commission"/>
+              action="manual_sales_commission.action_manual_sales_commission"/>
 
     <!-- Tree View -->
     <record id="view_manual_sales_commission_tree" model="ir.ui.view">
         <field name="name">manual.sales.commission.tree</field>
         <field name="model">manual.sales.commission</field>
+        <field name="type">tree</field> <!-- ✅ This line fixes the error -->
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
@@ -36,6 +37,7 @@
     <record id="view_manual_sales_commission_form" model="ir.ui.view">
         <field name="name">manual.sales.commission.form</field>
         <field name="model">manual.sales.commission</field>
+        <field name="type">form</field> <!-- ✅ Add this too -->
         <field name="arch" type="xml">
             <form string="Manual Sales Commission">
                 <sheet>
