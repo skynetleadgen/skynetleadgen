@@ -41,4 +41,11 @@
                 <sheet>
                     <group>
                         <field name="name"/>
-                        <field
+                        <field name="no_of_leads"/>
+                        <field name="commission_amount"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
