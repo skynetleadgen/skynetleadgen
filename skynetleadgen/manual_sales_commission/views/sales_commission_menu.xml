@@ -17,13 +17,12 @@
               name="Manual Commission"
               parent="menu_sales_commission_root"
               sequence="10"
-              action="manual_sales_commission.action_manual_sales_commission"/>
+              action="action_manual_sales_commission"/>
 
     <!-- Tree View -->
     <record id="view_manual_sales_commission_tree" model="ir.ui.view">
         <field name="name">manual.sales.commission.tree</field>
         <field name="model">manual.sales.commission</field>
-        <field name="type">tree</field> <!-- ✅ This line fixes the error -->
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
@@ -37,17 +36,9 @@
     <record id="view_manual_sales_commission_form" model="ir.ui.view">
         <field name="name">manual.sales.commission.form</field>
         <field name="model">manual.sales.commission</field>
-        <field name="type">form</field> <!-- ✅ Add this too -->
         <field name="arch" type="xml">
             <form string="Manual Sales Commission">
                 <sheet>
                     <group>
                         <field name="name"/>
-                        <field name="no_of_leads"/>
-                        <field name="commission_amount"/>
-                    </group>
-                </sheet>
-            </form>
-        </field>
-    </record>
-</odoo>
+                        <field
