@@ -1,4 +1,4 @@
-from odoo import models, fields
+from odoo import models, fields, api
 
 class ManualSalesCommission(models.Model):
     _name = "manual.sales.commission"
@@ -12,6 +12,7 @@ class ManualSalesCommission(models.Model):
         store=True
     )
 
+    @api.depends('no_of_leads')
     def _compute_commission(self):
         for record in self:
             record.commission_amount = record.no_of_leads * 500
