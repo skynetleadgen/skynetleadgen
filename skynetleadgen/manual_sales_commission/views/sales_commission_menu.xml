@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
   <data>
-    <!-- Window action for Sales Commission -->
+
+    <!-- Action -->
     <record id="action_manual_sales_commission" model="ir.actions.act_window">
       <field name="name">Manual Sales Commission</field>
       <field name="res_model">manual.sales.commission</field>
       <field name="view_mode">tree,form</field>
     </record>
 
-    <!-- Root menu item -->
+    <!-- Menus -->
     <menuitem id="menu_manual_sales_commission_root"
               name="Manual Sales Commission"
               sequence="10"
               groups="base.group_user"/>
 
-    <!-- Submenu linked to the action -->
     <menuitem id="menu_manual_sales_commission_records"
               name="Commission Records"
               parent="menu_manual_sales_commission_root"
@@ -22,34 +22,12 @@
               sequence="20"
               groups="base.group_user"/>
 
-    <!-- Tree view (fixed: removed type="tree") -->
+    <!-- Tree View -->
     <record id="view_manual_sales_commission_tree" model="ir.ui.view">
       <field name="name">manual.sales.commission.tree</field>
       <field name="model">manual.sales.commission</field>
+      <field name="type">tree</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
-          <field name="no_of_leads"/>
-          <field name="commission_amount"/>
-        </tree>
-      </field>
-    </record>
-
-    <!-- Form view (also no need for type="form") -->
-    <record id="view_manual_sales_commission_form" model="ir.ui.view">
-      <field name="name">manual.sales.commission.form</field>
-      <field name="model">manual.sales.commission</field>
-      <field name="arch" type="xml">
-        <form>
-          <sheet>
-            <group>
-              <field name="name"/>
-              <field name="no_of_leads"/>
-              <field name="commission_amount" readonly="1"/>
-            </group>
-          </sheet>
-        </form>
-      </field>
-    </record>
-  </data>
-</odoo>
+          <field name="no_of_leads"
