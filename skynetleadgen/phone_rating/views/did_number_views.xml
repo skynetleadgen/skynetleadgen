@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- List View -->
+    <record id="view_did_number_list" model="ir.ui.view">
+        <field name="name">did.number.list</field>
+        <field name="model">did.number</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="DID Numbers">
+                <field name="phone_number"/>
+                <field name="rating"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_did_number_form" model="ir.ui.view">
+        <field name="name">did.number.form</field>
+        <field name="model">did.number</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="DID Number">
+                <sheet>
+                    <group>
+                        <field name="phone_number"/>
+                        <field name="rating"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_did_number" model="ir.actions.act_window">
+        <field name="name">DID Numbers</field>
+        <field name="res_model">did.number</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menus -->
+    <menuitem id="menu_did_number_root" name="DID Numbers" sequence="10"/>
+    <menuitem id="menu_did_number" name="DID Numbers"
+              parent="menu_did_number_root" action="action_did_number" sequence="20"/>
+
+</odoo>
