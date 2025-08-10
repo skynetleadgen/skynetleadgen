@@ -2,16 +2,16 @@
 <odoo>
 
     <!-- List View -->
-    <record id="view_subscription_tree" model="ir.ui.view">
+    <record id="view_subscription_list" model="ir.ui.view">
         <field name="name">subscription.manager.list</field>
         <field name="model">subscription.manager</field>
         <field name="type">list</field>
         <field name="arch" type="xml">
-            <tree string="Subscriptions">
+            <list string="Subscriptions">
                 <field name="name"/>
                 <field name="user_id"/>
                 <field name="renewal_date"/>
-            </tree>
+            </list>
         </field>
     </record>
 
