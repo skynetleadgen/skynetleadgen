@@ -26,7 +26,7 @@
                     <group>
                         <field name="name"/>
                         <field name="user_id"/>
-                        <field name="password" password="True"/>
+                        <field name="password" />
                         <field name="renewal_date"/>
                     </group>
                 </sheet>
