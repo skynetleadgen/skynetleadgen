@@ -1,7 +1,7 @@
 from odoo import models, fields
 
 class PhoneNumber(models.Model):
-    _name = 'phone.number'
+    _name = 'did.number'
     _description = 'Phone Number with Rating'
 
     name = fields.Char(string='Phone Number', required=True)
