@@ -1,5 +1,5 @@
 {
-    'name': 'Phone Number Ratings',
+    'name': 'DID Numbers',
     'version': '1.0',
     'category': 'Tools',
     'summary': 'Store phone numbers and assign manual ratings',
