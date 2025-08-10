@@ -1,8 +1,8 @@
 from odoo import models, fields
 
-class Subscription(models.Model):
+class SubscriptionManager(models.Model):
     _name = 'subscription.manager'
-    _description = 'Software Subscription'
+    _description = 'Software Subscription Manager'
 
     name = fields.Char(string='Software Name', required=True)
     user_id = fields.Char(string='User ID')
