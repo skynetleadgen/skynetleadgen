@@ -7,10 +7,10 @@
         <field name="model">did.number</field>
         <field name="type">list</field>
         <field name="arch" type="xml">
-            <tree string="DID Numbers">
+            <list string="DID Numbers">
                 <field name="phone_number"/>
                 <field name="rating"/>
-            </tree>
+            </list>
         </field>
     </record>
 
