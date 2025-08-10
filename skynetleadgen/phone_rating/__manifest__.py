@@ -7,7 +7,7 @@
     'depends': ['base'],
     'data': [
         'security/ir.model.access.csv',
-        'views/phone_number_views.xml',
+        'views/did_number_views.xml',
     ],
     'installable': True,
     'application': True,
