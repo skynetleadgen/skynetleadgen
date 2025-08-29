@@ -8,22 +8,20 @@
         report_type="qweb-pdf"
         name="manual_sales_commission.report_sales_commission"
         file="manual_sales_commission.report_sales_commission"
-        print_report_name="'Commission_%s' % (object.employee_id.name)"
+        print_report_name="'Commission_%s' % (object.name)"
     />
 
     <!-- QWeb Template -->
     <template id="report_sales_commission">
-        <t t-call="web.html_container">
+        <t t-call="web.external_layout">
             <t t-foreach="docs" t-as="o">
-                <t t-call="web.external_layout">
-                    <div class="page">
-                        <h2>Sales Commission Report</h2>
-                        <p><strong>Employee:</strong> <span t-field="o.employee_id.name"/></p>
-                        <p><strong>Month:</strong> <span t-field="o.month"/></p>
-                        <p><strong>No. of Leads:</strong> <span t-field="o.no_of_leads"/></p>
-                        <p><strong>Commission Amount:</strong> <span t-field="o.commission_amount"/></p>
-                    </div>
-                </t>
+                <div class="page">
+                    <h2>Sales Commission Report</h2>
+                    <p><strong>Employee:</strong> <span t-field="o.name"/></p>
+                    <p><strong>Month:</strong> <span t-field="o.month"/></p>
+                    <p><strong>No. of Leads:</strong> <span t-field="o.no_of_leads"/></p>
+                    <p><strong>Commission Amount:</strong> <span t-field="o.commission_amount"/></p>
+                </div>
             </t>
         </t>
     </template>
