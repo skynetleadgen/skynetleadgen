@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <report
+        id="manual_sales_commission_report_action"
+        model="manual.sales.commission"
+        string="Sales Commission Report"
+        report_type="qweb-pdf"
+        name="manual_sales_commission.report_sales_commission"
+        file="manual_sales_commission.report_sales_commission"
+    />
+</odoo>
