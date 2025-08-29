@@ -1,6 +1,6 @@
 {
     'name': 'Manual Sales Commission',
-    'version': '1.0',
+    'version': '1.2',
     'summary': 'Manage manual sales commissions',
     'description': 'Module to handle manual sales commissions',
     'author': 'Your Name',
