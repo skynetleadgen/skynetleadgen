@@ -9,7 +9,7 @@
     'data': [
         'security/ir.model.access.csv',
         'views/sales_commission_menu.xml',
-        'report/sales_commission_report.xml',
+        'report/sales_commission_report.xml',   # <-- IMPORTANT
     ],
     'installable': True,
     'application': True,
