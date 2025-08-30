@@ -37,7 +37,7 @@
         <field name="arch" type="xml">
             <form string="Manual Sales Commission">
                 <header>
-                    <button name="manual_sales_commission_report_action"
+                    <button name="manual_sales_commission.manual_sales_commission_report_action"
                             string="Download Commission Report"
                             type="ir.actions.report"
                             class="btn-primary"/>
