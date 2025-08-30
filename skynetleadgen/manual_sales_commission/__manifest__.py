@@ -5,7 +5,7 @@
     'description': 'Module to handle manual sales commissions',
     'author': 'Your Name',
     'category': 'Sales',
-    'depends': ['base', 'web'],  # remove 'report' if not installed
+    'depends': ['base', 'web'],
     'data': [
         'security/ir.model.access.csv',
         'report/sales_commission_report.xml',
