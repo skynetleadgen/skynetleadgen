@@ -12,19 +12,37 @@
 
     <!-- Report Template -->
     <template id="report_sales_commission">
-        <t t-call="web.external_layout">
-            <t t-foreach="docs" t-as="o">
-                <div class="page" style="text-align: center; padding: 50px;">
-                    <h2 style="font-weight: bold; font-size: 30px;">SKYNET LEADGEN</h2>
-                    <p style="font-size: 20px; margin-top: 40px;"><b>Employee:</b> <span t-field="o.name"/></p>
-                    <p style="font-size: 20px;"><b>Month:</b> <span t-field="o.month"/></p>
-                    <p style="font-size: 20px;"><b>No. of Leads:</b> <span t-field="o.no_of_leads"/></p>
-                    <p style="font-size: 20px;"><b>Commission Amount:</b> <span t-field="o.commission_amount"/></p>
-                    <footer style="position: absolute; bottom: 20px; width: 100%; text-align: center;">
-                        <span>Page <span t-esc="page" /> / <span t-esc="pages"/></span>
-                    </footer>
-                </div>
-            </t>
+        <!-- Use internal layout for report structure -->
+        <t t-call="web.internal_layout">
+            <div class="page">
+                <!-- Define main content for the report -->
+                <main>
+                    <div style="text-align: center; padding: 50px;">
+                        <h2 style="font-weight: bold; font-size: 30px;">SKYNET LEADGEN</h2>
+                        
+                        <p style="font-size: 20px; margin-top: 40px;">
+                            <b>Employee:</b> <span t-field="o.name"/>
+                        </p>
+                        
+                        <p style="font-size: 20px;">
+                            <b>Month:</b> <span t-field="o.month"/>
+                        </p>
+                        
+                        <p style="font-size: 20px;">
+                            <b>No. of Leads:</b> <span t-field="o.no_of_leads"/>
+                        </p>
+                        
+                        <p style="font-size: 20px;">
+                            <b>Commission Amount:</b> <span t-field="o.commission_amount"/>
+                        </p>
+                    </div>
+                </main>
+
+                <!-- Footer with page numbers -->
+                <footer style="position: absolute; bottom: 20px; width: 100%; text-align: center;">
+                    <span>Page <span t-esc="page" /> / <span t-esc="pages"/></span>
+                </footer>
+            </div>
         </t>
     </template>
 </odoo>
