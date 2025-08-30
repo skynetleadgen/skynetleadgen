@@ -20,12 +20,12 @@
         <field name="model">manual.sales.commission</field>
         <field name="type">list</field>
         <field name="arch" type="xml">
-            <list>
+            <tree>
                 <field name="name"/>
                 <field name="month"/>
                 <field name="no_of_leads"/>
                 <field name="commission_amount"/>
-            </list>
+            </tree>
         </field>
     </record>
 
@@ -37,9 +37,9 @@
         <field name="arch" type="xml">
             <form string="Manual Sales Commission">
                 <header>
-                    <button name="manual_sales_commission.manual_sales_commission_report_action"
+                    <button name="manual_sales_commission_report_action"
                             string="Print Commission Report"
-                            type="ir.actions.report"
+                            type="report"
                             class="btn-primary"/>
                 </header>
                 <sheet>
