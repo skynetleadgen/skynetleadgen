@@ -28,11 +28,20 @@
         <field name="type">form</field>
         <field name="arch" type="xml">
             <form string="Manual Sales Commission">
+                <!-- ✅ Add header with print button -->
+                <header>
+                    <button name="%(manual_sales_commission_report_action)d"
+                            string="Print Commission Report"
+                            type="action"
+                            class="btn-primary"/>
+                </header>
+
                 <sheet>
                     <group>
                         <field name="name"/>
                         <field name="no_of_leads"/>
                         <field name="commission_amount"/>
+                        <field name="month"/> <!-- add month field -->
                     </group>
                 </sheet>
             </form>
