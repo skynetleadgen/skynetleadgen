@@ -12,6 +12,7 @@
 
     <!-- Report Template -->
     <template id="report_sales_commission">
+        <!-- Ensure the report uses the external layout -->
         <t t-call="web.external_layout">
             <t t-foreach="docs" t-as="o">
                 <div class="page">
