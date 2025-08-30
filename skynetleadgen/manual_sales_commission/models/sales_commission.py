@@ -5,6 +5,7 @@ class ManualSalesCommission(models.Model):
     _description = "Manual Sales Commission"
 
     name = fields.Char(string="Salesperson Name", required=True)
+    month = fields.Char(string="Month")  # <-- Add this field
     no_of_leads = fields.Integer(string="Number of Leads", required=True)
     commission_amount = fields.Float(
         string="Commission Amount",
