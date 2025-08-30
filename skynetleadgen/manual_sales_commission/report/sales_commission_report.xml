@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <!-- Report Action -->
-    <report
-        id="manual_sales_commission_report_action"
-        model="manual.sales.commission"
-        string="Sales Commission Report"
-        report_type="qweb-pdf"
-        name="manual_sales_commission.report_sales_commission"
-        file="manual_sales_commission.report_sales_commission"
-        print_report_name="'Commission_Report'"
-    />
+    <record id="manual_sales_commission_report_action" model="ir.actions.report">
+        <field name="name">Sales Commission Report</field>
+        <field name="model">manual.sales.commission</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">manual_sales_commission.report_sales_commission</field>
+        <field name="report_file">manual_sales_commission.report_sales_commission</field>
+        <field name="print_report_name">'Commission_Report_' + object.name</field>
+    </record>
 
     <!-- Report Template -->
     <template id="report_sales_commission">
@@ -17,10 +16,10 @@
             <t t-foreach="docs" t-as="o">
                 <div class="page">
                     <h2>Sales Commission Report</h2>
-                    <p><b>Employee:</b> <span t-field="o.name"/></p>
-                    <p><b>Month:</b> <span t-field="o.month"/></p>
-                    <p><b>No. of Leads:</b> <span t-field="o.no_of_leads"/></p>
-                    <p><b>Commission Amount:</b> <span t-field="o.commission_amount"/></p>
+                    <p><strong>Employee:</strong> <span t-field="o.name"/></p>
+                    <p><strong>Month:</strong> <span t-field="o.month"/></p>
+                    <p><strong>No. of Leads:</strong> <span t-field="o.no_of_leads"/></p>
+                    <p><strong>Commission Amount:</strong> <span t-field="o.commission_amount"/></p>
                 </div>
             </t>
         </t>
