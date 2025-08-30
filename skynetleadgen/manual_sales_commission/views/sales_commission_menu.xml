@@ -14,7 +14,7 @@
               sequence="10"
               action="action_manual_sales_commission"/>
 
-    <!-- List View -->
+    <!-- Tree View -->
     <record id="view_manual_sales_commission_tree" model="ir.ui.view">
         <field name="name">manual.sales.commission.tree</field>
         <field name="model">manual.sales.commission</field>
@@ -39,7 +39,7 @@
                 <header>
                     <button name="%(manual_sales_commission.manual_sales_commission_report_action)d"
                             string="Print Commission Report"
-                            type="ir.actions.report"
+                            type="action"
                             class="btn-primary"/>
                 </header>
                 <sheet>
