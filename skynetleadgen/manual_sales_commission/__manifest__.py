@@ -5,11 +5,11 @@
     'description': 'Module to handle manual sales commissions',
     'author': 'Your Name',
     'category': 'Sales',
-    'depends': ['base', 'web'],  # Add 'web' to support QWeb reports
+    'depends': ['base', 'web'],  # important for QWeb reports
     'data': [
         'security/ir.model.access.csv',
-        'report/sales_commission_report.xml',  # Load report first
-        'views/sales_commission_menu.xml',     # Load views after report
+        'report/sales_commission_report.xml',  # report loaded first
+        'views/sales_commission_menu.xml',     # views loaded after
     ],
     'installable': True,
     'application': True,
