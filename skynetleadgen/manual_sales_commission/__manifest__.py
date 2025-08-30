@@ -1,6 +1,6 @@
 {
     'name': 'Manual Sales Commission',
-    'version': '1.1',  # bump version so Odoo reloads changes
+    'version': '1.1',
     'summary': 'Manage manual sales commissions',
     'description': 'Module to handle manual sales commissions',
     'author': 'Your Name',
@@ -10,7 +10,7 @@
         'security/ir.model.access.csv',
         'report/sales_commission_report.xml',
         'views/sales_commission_menu.xml',
-        ],
+    ],
     'installable': True,
     'application': True,
     'auto_install': False,
