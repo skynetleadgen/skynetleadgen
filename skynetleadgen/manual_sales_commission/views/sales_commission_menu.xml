@@ -38,8 +38,8 @@
             <form string="Manual Sales Commission">
                 <header>
                     <button name="manual_sales_commission_report_action"
-                            string="Download PDF"
-                            type="ir.actions.report"
+                            string="Download Commission Report"
+                            type="action"
                             class="btn-primary"/>
                 </header>
                 <sheet>
