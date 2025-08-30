@@ -29,7 +29,7 @@
         </field>
     </record>
 
-    <!-- Form View with Download PDF Button -->
+    <!-- Form View with PDF Download Button -->
     <record id="view_manual_sales_commission_form" model="ir.ui.view">
         <field name="name">manual.sales.commission.form</field>
         <field name="model">manual.sales.commission</field>
@@ -39,7 +39,7 @@
                 <header>
                     <button name="manual_sales_commission_report_action"
                             string="Download Commission Report"
-                            type="action"
+                            type="ir.actions.report"
                             class="btn-primary"/>
                 </header>
                 <sheet>
