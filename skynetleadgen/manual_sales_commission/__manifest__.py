@@ -5,11 +5,11 @@
     'description': 'Module to handle manual sales commissions',
     'author': 'Your Name',
     'category': 'Sales',
-    'depends': ['base', 'report'],  # required for PDF reports
+    'depends': ['base', 'web'],  # remove 'report' if not installed
     'data': [
-        'security/ir.model.access.csv',           # access rights first
-        'report/sales_commission_report.xml',    # report loaded first
-        'views/sales_commission_menu.xml',       # views loaded after
+        'security/ir.model.access.csv',
+        'report/sales_commission_report.xml',
+        'views/sales_commission_menu.xml',
     ],
     'installable': True,
     'application': True,
