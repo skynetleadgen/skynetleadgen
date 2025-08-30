@@ -13,15 +13,17 @@
     <!-- Report Template -->
     <template id="report_sales_commission">
         <t t-call="web.external_layout">
-            <t t-foreach="docs" t-as="o">
-                <div class="page">
-                    <h2>Sales Commission Report</h2>
-                    <p><b>Employee:</b> <span t-field="o.name"/></p>
-                    <p><b>Month:</b> <span t-field="o.month"/></p>
-                    <p><b>No. of Leads:</b> <span t-field="o.no_of_leads"/></p>
-                    <p><b>Commission Amount:</b> <span t-field="o.commission_amount"/></p>
-                </div>
-            </t>
+            <main>
+                <t t-foreach="docs" t-as="o">
+                    <div class="page">
+                        <h2>Sales Commission Report</h2>
+                        <p><b>Employee:</b> <span t-field="o.name"/></p>
+                        <p><b>Month:</b> <span t-field="o.month"/></p>
+                        <p><b>No. of Leads:</b> <span t-field="o.no_of_leads"/></p>
+                        <p><b>Commission Amount:</b> <span t-field="o.commission_amount"/></p>
+                    </div>
+                </t>
+            </main>
         </t>
     </template>
 </odoo>
